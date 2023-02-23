@@ -1,0 +1,20 @@
+version: '3.6'
+services:
+  iris:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    command: --check-caps false
+    ports: 
+      - 51773
+      - 52773:52773
+      - 53773
+    volumes:
+      - ~/iris.key:/usr/irissys/mgr/iris.key
+      - databases-auchan:/databases
+      - ./AUCHANLIB:/opt/iriscode/AUCHANLIB
+      - ./POC:/opt/iriscode/POC
+volumes:
+   databases-auchan:
+    external: true

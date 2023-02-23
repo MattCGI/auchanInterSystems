@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+    
+        "Dockerfile*": "dockerfile",
+      },
+    "objectscript.conn" :{
+      "ns": "AUCHANLIB",
+      "active": true,
+      "links": {
+        "CRUD REST spec": "http://localhost:${port}/crud/_spec"
+      },
+      "server": "default~iris"
+    }
+    
+    
+  
+
+}

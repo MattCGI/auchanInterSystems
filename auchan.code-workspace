@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "AUCHANLIB"
+		},
+		{
+			"path": "POC"
+		}
+	],
+	"settings": {
+		"objectscript.conn.active": false
+	}
+}
